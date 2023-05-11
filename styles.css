@@ -63,3 +63,23 @@ h1 {
     width: 1%;
     z-index: 4;
 }
+
+.hours-container {
+
+    /* 12hrs into seconds 60x60x12 */
+    animation: rotatehand 34200s infinite linear;
+}
+
+.minutes-container {
+    animation: rotatehand 3600s infinite steps(60);
+}
+
+.seconds-container {
+    animation: rotatehand 60s infinite steps(60);
+}
+
+@keyframes rotatehand {
+    100% {
+        transform: rotate(360deg);
+    }
+}
